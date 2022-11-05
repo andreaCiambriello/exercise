@@ -17,41 +17,44 @@
 
   <body>
     <form action="">
-      <label for="email">Enter your email:</label>
-      <input type="email" name="email" id="email">
-      <label for="pwd">Enter a password:</label>
-      <input type="password" name="pwd" id="pwd">
-      <label for="fname">Firstname:</label>
-      <input type="text" name="firstname" id="fname">
-      <label for="lname">Lastname:</label>
-      <input type="text" name="lastname" id="lname">
-      <label for="bdate">Date of birth:</label>
-      <input type="date" name="birthdate" id="bdate">
-      <label for="phone">Enter a phone number:</label>
-      <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{7}" 
+      <div>
+        <label for="email">Enter your email:</label>
+        <input type="email" name="email" id="email">
+        <label for="pwd">Enter a password:</label>
+        <input type="password" name="pwd" id="pwd">
+        <label for="fname">Firstname:</label>
+        <input type="text" name="firstname" id="fname">
+        <label for="lname">Lastname:</label>
+        <input type="text" name="lastname" id="lname">
+        <label for="bdate">Date of birth:</label>
+        <input type="date" name="birthdate" id="bdate">
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{7}" 
             placeholder="333-1234567">
-      <label for="plans">Choose a plan:</label>      
-      <select name="plans" id="plans">
-        <option value="free">Free plan</option>
-        <optgroup label="Payment plans">
-        <option value="first">Basic plan ($9.99)</option>
-        <option value="second">Intermediate plan ($19.99)</option>
-        <option value="third">Advanced plan ($29.99)</option>
-        </optgroup>
-      </select>
-      <label for="checkbox"></label>
-      <input type="checkbox" name="checkbox" id="checkbox">Pro plan</input>
-      <label for="card number">Credit Card Number:</label>
-      <input inputmode="numeric" name="card number" id="card number"
+        <label for="plans">Choose a plan:</label>      
+        <select name="plans" id="plans">
+            <option value="free">Free plan</option>
+          <optgroup label="Payment plans">
+            <option value="first">Basic plan ($9.99)</option>
+            <option value="second">Intermediate plan ($19.99)</option>
+            <option value="third">Advanced plan ($29.99)</option>
+          </optgroup>
+        </select>
+        <label for="checkbox"></label>
+        <input type="checkbox" name="checkbox" id="checkbox">Pro plan</input>
+        <label for="card number">Credit Card Number:</label>
+        <input inputmode="numeric" name="card number" id="card number"
              autocomplete="cc-number" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}-" 
              maxlength="16"></input>
-      <label for="cvc">CVC:</label>
-      <input inputmode="numeric" name="cvc" id="cvc" minlength="3" maxlength="4"
+        <label for="cvc">CVC:</label>
+        <input inputmode="numeric" name="cvc" id="cvc" minlength="3" maxlength="4"
             pattern="[0-9]">
-      <label for="expdate">Expiration Date:</label>
-      <input type="date" name="expiration date" id="expdate">
-      <label for="billing address">Billing address:</label>
-      <input type="text" name="billing address" id="billing address">
+        <label for="expdate">Expiration Date:</label>
+        <input type="date" name="expiration date" id="expdate">
+        <label for="billing address">Billing address:</label>
+        <input type="text" name="billing address" id="billing address">
+      </div>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>

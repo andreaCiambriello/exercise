@@ -4,7 +4,9 @@
 
 #container {
     margin: 2em;
-    width: 35ch;
+/*ho usato max-width per bloccare l'intera card, togliendolo cresce insieme al viewport*/
+    max-width: max-content;
+    min-width: 15em;
     display: flex;
     flex-direction: column;
     border-radius: 1em;
@@ -13,16 +15,14 @@
 }
 
 #image {
-    background-color: #858e97;
-    color: white;
-    height: 14em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*ho usato contents per eliminare una piccola linea bianca che usciva sotto l'immagine, ovvero tra l'immagine e il div che la contiene*/
+    display: contents;
 }
 
 img {
-    font-size: x-large;
+/*responsive image*/
+    width: 100%;
+    height: auto;
 }
 
 section {

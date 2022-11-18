@@ -1,0 +1,51 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    margin: 2em;
+    width: 35ch;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+}
+
+#image {
+    background-color: #858e97;
+    color: white;
+    height: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    font-size: x-large;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#container > section > div {
+    border: 1px solid #dfdfdf;
+    padding: 1em;
+}
+
+div > article {
+    height: 7em;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+#link {
+    display: flex;
+    align-items: center;
+    height: 2em;
+}

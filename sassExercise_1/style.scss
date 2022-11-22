@@ -1,0 +1,29 @@
+$color-primary: red;
+$color-tertiary: green;
+$color-border: #BD5559;
+$color-alternative: blue;
+
+div {
+    width: 100%;
+    border: 1px solid $color-border;
+    text-align: center;
+    padding: 10px;
+    h1 {
+        color: $color-tertiary;
+        text-decoration: black 1.5px underline;
+        text-underline-offset: 8px;
+    }
+    section {
+        display: flex;
+    }
+    article {
+        border: 1px solid $color-tertiary;
+        padding: 10px;
+    }
+    p.blue {
+        color: $color-alternative;
+    }
+    p.red {
+        color: $color-primary;
+    }
+}

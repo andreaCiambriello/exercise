@@ -1,0 +1,39 @@
+div {
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid #BD5559;
+  text-align: center;
+  padding: 10px;
+}
+div h1 {
+  color: green;
+  text-decoration: black 1.5px underline;
+  text-underline-offset: 8px;
+}
+div section {
+  display: flex;
+}
+div article {
+  border: 1px solid green;
+  padding: 10px;
+}
+div p.blue {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+}
+div p.red {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+
+#last article {
+  width: 100%;
+  margin-top: 20px;
+  color: green;
+  border-color: blue;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */

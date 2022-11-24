@@ -1,0 +1,53 @@
+/*ho usato il modulo map per creare un dictionary con tutte le variabili 
+dichiarate nell'esercizio 2, ovvero i colori che poi ho invocato con la 
+funzione get(), al posto del mixin usato nell'esercizio precedente*/
+/*ho creato un modulo con una funzione per convertire i numeri in rem e invocato la
+funzione per inserire i valori dove prima c'era il mixin*/
+/*ho lasciato il dictionary dei colori e la funzione dell'esercizio 3
+e ho aggiunto quanto richiesto nella consegna, ovvero & per il nesting
+degli elementi ed @extend per l'h2*/
+div {
+  width: 100%;
+  border: 0.0625rem solid #BD5559;
+  text-align: center;
+  padding: 0.625rem;
+}
+div h1, div h2 {
+  color: green;
+  text-decoration: black 0.09375rem underline;
+  text-underline-offset: 0.5rem;
+}
+div h2 {
+  padding: 1rem;
+  border: 0.0625rem solid red;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+div section {
+  display: flex;
+}
+div article {
+  border: 0.0625rem solid green;
+  padding: 0.625rem;
+}
+div p.blue {
+  border-color: green;
+  color: blue;
+  font-size: 1rem;
+}
+div p.red {
+  border-color: green;
+  color: red;
+  font-size: 1rem;
+}
+div #last article {
+  width: 100%;
+  margin-top: 1.25rem;
+  border-color: blue;
+  color: green;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

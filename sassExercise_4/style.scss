@@ -1,0 +1,64 @@
+/*ho usato il modulo map per creare un dictionary con tutte le variabili 
+dichiarate nell'esercizio 2, ovvero i colori che poi ho invocato con la 
+funzione get(), al posto del mixin usato nell'esercizio precedente*/
+@use "sass:map";
+$colors: (
+    "primary": red,
+    "tertiary": green,
+    "border-container": #BD5559,
+    "alternative": blue 
+);
+/*ho creato un modulo con una funzione per convertire i numeri in rem e invocato la
+funzione per inserire i valori dove prima c'era il mixin*/
+@use "function.scss" as f;
+
+/*ho lasciato il dictionary dei colori e la funzione dell'esercizio 3
+e ho aggiunto quanto richiesto nella consegna, ovvero & per il nesting
+degli elementi ed @extend per l'h2*/
+div {
+    width: 100%;
+    border: f.rem(1) solid map.get($colors, "border-container");
+    text-align: center;
+    padding: f.rem(10);
+    & h1 {
+        color: map.get($colors, "tertiary");
+        text-decoration: black f.rem(1.5) underline;
+        text-underline-offset: f.rem(8);
+    }
+    & h2 {
+        @extend h1;
+        padding: f.rem(16);
+        border: f.rem(1) solid map.get($colors, "primary");
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+    }
+    & section {
+        display: flex;
+    }
+    & article {
+        border: f.rem(1) solid map.get($colors, "tertiary");
+        padding: f.rem(10);
+    }
+    & p.blue {
+        border-color: map.get($colors, "tertiary");
+        color: map.get($colors, "alternative");
+        font-size: f.rem(16);
+    }
+    & p.red {
+        border-color: map.get($colors, "tertiary");
+        color: map.get($colors, "primary");
+        font-size: f.rem(16);
+    }
+    & #last {
+        & article {
+            width: 100%;
+            margin-top: f.rem(20);
+            border-color: map.get($colors, "alternative");
+            color: map.get($colors, "tertiary");
+            font-size: f.rem(24);
+        }
+    }
+}
+

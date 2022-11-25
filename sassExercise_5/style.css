@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/*ho usato il modulo map per creare un dictionary con tutte le variabili 
+dichiarate nell'esercizio 2, ovvero i colori che poi ho invocato con la 
+funzione get(), al posto del mixin usato nell'esercizio precedente*/
+/*ho creato un modulo con una funzione per convertire i numeri in rem e invocato la
+funzione per inserire i valori dove prima c'era il mixin*/
+/*ho lasciato il dictionary dei colori e la funzione dell'esercizio 3
+e ho aggiunto quanto richiesto nella consegna, ovvero & per il nesting
+degli elementi ed @extend per l'h2*/
+div {
+  width: 100%;
+  border: 0.0625rem solid #BD5559;
+  text-align: center;
+  padding: 0.625rem;
+}
+div h1, div h2 {
+  color: green;
+  text-decoration: black 0.09375rem underline;
+  text-underline-offset: 0.5rem;
+}
+div h2 {
+  padding: 1rem;
+  border: 0.0625rem solid red;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+div section {
+  display: flex;
+}
+div article {
+  border: 0.0625rem solid green;
+  padding: 0.625rem;
+}
+div p.blue {
+  border-color: green;
+  color: blue;
+  font-size: 1rem;
+}
+div p.red {
+  border-color: green;
+  color: red;
+  font-size: 1rem;
+}
+div #last article {
+  width: 100%;
+  margin-top: 1.25rem;
+  border-color: blue;
+  color: green;
+  font-size: 1.5rem;
+}
+
+/*questa è la parte aggiunta per l'esercizio 5*/
+#boxes_container {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+#boxes_container div {
+  height: 45px;
+  width: 45px;
+  text-align: initial;
+  padding: 0;
+}
+
+.fs-1rem {
+  font-size: 1rem;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+
+.fs-1 {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+
+.fs-2 {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+
+.fs-3 {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+
+.fs-4 {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+.fs-5 {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+
+.fs-6 {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+
+.fs-7 {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+
+.fs-8 {
+  background-color: #999999;
+  color: #666666;
+}
+
+.fs-9 {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+
+.fs-10 {
+  background-color: blue;
+  color: red;
+}
+
+.fs-11 {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+
+.fs-12 {
+  background-color: #666666;
+  color: #999999;
+}
+
+.fs-13 {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+
+.fs-14 {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+
+.fs-15 {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+
+.fs-16 {
+  background-color: #333333;
+  color: #cccccc;
+}
+
+.fs-17 {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+
+.fs-18 {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+
+.fs-19 {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+
+/*# sourceMappingURL=style.css.map */

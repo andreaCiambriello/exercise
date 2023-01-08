@@ -1,3 +1,4 @@
+let salary;
 function calculateSalary(role) {
     switch (role) {
     case "ceo":

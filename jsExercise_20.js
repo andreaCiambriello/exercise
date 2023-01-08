@@ -19,9 +19,9 @@ class Square{
   
   class AreaCalculator{
     static calculate(figure) {
-      if(figure == square) {
+      if(figure instanceof Square) {
         return figure.side**2
-      } else if(figure == rectangle) {
+      } else if(figure instanceof Rectangle) {
         return figure.width * figure.height
       } else {
         return figure.radius**2 * 3.14 

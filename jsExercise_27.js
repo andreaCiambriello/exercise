@@ -5,11 +5,6 @@ const person = {
     age: 25
   };
   
-  const {id, ...rest} = person;
-  const personInfo = {
-    firstName: rest.firstName,
-    lastName: rest.lastName,
-    age: rest.age
-  };
+  const {id, ...personInfo} = person;
   
   console.log(id, personInfo);

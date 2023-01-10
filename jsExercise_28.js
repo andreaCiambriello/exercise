@@ -1,7 +1,6 @@
-function sum(...arg) {
-    return arg.reduce((a, b) => a + b);
+function sum(num1, num2, num3) {
+  return num1 + num2 + num3;
   }
   
   const numbers = [1, 2, 3];
-  const [...arg] = numbers;
-  console.log(sum(...arg));
+  console.log(sum(...numbers));

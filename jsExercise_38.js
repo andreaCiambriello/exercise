@@ -6,7 +6,7 @@ function firstPromise(isLogged) {
         if(isLogged === true) {
             resolve(num);
         } else {
-            reject(new Error("Not logged in!"));
+            reject(new Error(`Not logged in!`));
         }
     })
 }
@@ -16,7 +16,7 @@ function secondPromise(num) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if(num > 0.5) {
-                resolve(`{name: "John", age: 24}`);
+                resolve({name: "John", age: 24});
             } else {
                 reject(`error`);
             }

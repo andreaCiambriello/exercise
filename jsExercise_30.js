@@ -7,7 +7,8 @@ class Person {
     }
     
     static fromJson(json) {
-      return JSON.parse(json)
+      let data = JSON.parse(json);
+      return new Person(data.id, data.firstName, data.lastName, data.age);
     }
   }
   

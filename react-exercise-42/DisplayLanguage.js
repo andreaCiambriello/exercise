@@ -5,7 +5,7 @@ export function DisplayLanguage() {
     return (
         <LanguageContext.Consumer>
             { (language) => (
-                <h3>Current Language: {language}</h3>
+                <div>Current Language: <h1>{language}</h1></div>
             )}
         </LanguageContext.Consumer>
     )

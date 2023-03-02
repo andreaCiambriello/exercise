@@ -5,6 +5,10 @@ export function GithubUser({ username }) {
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(false)
 
+    useEffect(() => {
+        fetchUserDetails(username)
+    }, [username])
+
     async function fetchUserDetails(username) {
         setLoading(true)
         try {
@@ -23,10 +27,6 @@ export function GithubUser({ username }) {
             setLoading(false)
         }
     }
-
-    useEffect(() => {
-        fetchUserDetails(username)
-    }, [username])
 
     return (
         <div>

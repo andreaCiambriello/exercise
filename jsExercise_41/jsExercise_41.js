@@ -3,15 +3,7 @@ const user = {
     name: "John",
     age: 25,
   };
-  
-  function setData() {
-    localStorage.user = JSON.stringify(user);
-  }
-  
-  function getData() {
-    let userInLocal = localStorage.getItem('user');
-    console.log(JSON.parse(userInLocal));
-  }
-  
-  setData();
-  getData();
+
+  localStorage.setItem("user", JSON.stringify(user));
+  const userLocal = JSON.parse(localStorage.getItem("user"));
+  console.log(userLocal);

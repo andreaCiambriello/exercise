@@ -31,6 +31,9 @@ describe("POST /users", () => {
             id: 789, name: "Marco"
         };
 
+        // @ts-ignore
+        prismaMock.user.create.mockResolvedValue(user);
+
         const response = await request
             .post("/users")
             .send(user)
@@ -58,4 +61,3 @@ describe("POST /users", () => {
         });
     });
 });
-

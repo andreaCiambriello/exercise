@@ -15,7 +15,11 @@ app.get("/users", async (request, response) => {
 });
 
 app.post("/users", validate({ body: userSchema }), async (request, response) => {
-    const user: UserData = request.body;
+    const userData: UserData = request.body;
+
+    const user = await prisma.user.create({
+        data: userData
+    });
 
     response.status(201).json(user);
 });
